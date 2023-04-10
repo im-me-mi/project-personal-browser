@@ -1,3 +1,54 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
 .hidden {
   display: none;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+#todo-form {
+  width: 500px;
+}
+
+#todo-form input {
+  width: 100%;
+  border: 0;
+  background: none;
+  border-bottom: 2px solid #000;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+ul {
+  width: 500px;
+  margin-top: 10px;
+}
+
+li {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+li span {
+  width: 100%;
+}
+
+li button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+  float: right;
+  padding-left: 20px;
+  font-size: 1.2rem;
 }
