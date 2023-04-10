@@ -14,7 +14,7 @@ function onLogSubmit(event) {
 }
 
 function loadMainTitle(userName) {
-  mainTitle.innerText = `Hello ${userName}`;
+  mainTitle.innerText = `환영합니다 ${userName}님`;
   mainTitle.classList.remove(HIDDEN_CLASSNAME);
 }
 
