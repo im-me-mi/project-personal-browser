@@ -16,14 +16,14 @@ function delTodo(event) {
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(delList.id));
   saveToDos();
 }
-
+ 
 function paintToDo(newDo) {
   const newList = document.createElement("li");
   newList.id = newDo.id;
   const newSpan = document.createElement("span");
   newSpan.innerText = newDo.text;
   const delBtn = document.createElement("button");
-  delBtn.innerText = "❌";
+  delBtn.innerText = "⛔";
   delBtn.addEventListener("click", delTodo);
   newList.appendChild(newSpan);
   newList.appendChild(delBtn);
