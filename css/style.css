@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
 * {
   padding: 0;
-  margin: 0 auto;
-  list-style: none;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .hidden {
@@ -17,38 +20,95 @@ img {
   z-index: -1;
 }
 
+.login-form-wrap {
+  width: 600px;
+  height: 150px;
+  background-color: rgba(220, 220, 220, 0.8);
+  border-radius: 50px;
+  position: absolute;
+  left: 2%;
+  top: 8%;
+  text-align: center;
+}
+
+.login-form-wrap input {
+  margin-top: 20px;
+}
+
+.login-form-wrap input:first-child {
+  width: 30%;
+  border: 0;
+  border-bottom: 1px solid #101010;
+  background: none;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.login-form-wrap input:last-child {
+  padding: 5px;
+  border: 0;
+}
+
+.login-form-wrap p {
+  font-size: 1.7rem;
+  font-weight: 00;
+  text-align: center;
+  line-height: 50px;
+}
+
+.login-form-wrap:first-child {
+  padding-top: 25px;
+}
+
 #todo-form {
-  width: 500px;
+  width: 480px;
 }
 
 #todo-form input {
   width: 100%;
   border: 0;
   background: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #101010;
   font-size: 1.2rem;
   padding: 5px;
+  margin-top: 45px;
+  margin-left: 55px;
 }
 
-ul {
-  width: 500px;
-  margin-top: 10px;
+.todo-wrap {
+  width: 600px;
+  height: 600px;
+  background-color: rgba(220, 220, 220, 0.8);
+  border-radius: 50px;
+  position: absolute;
+  left: 2%;
+  bottom: 9%;
 }
 
-li {
+.todo-wrap ul {
+  width: 470px;
+  margin: 20px 0 0 65px;
+}
+
+.todo-wrap ul li {
   width: 100%;
   font-size: 1.2rem;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
-li span {
-  width: 100%;
+.todo-wrap ul li span {
+  border-bottom: 1px solid #101010;
+  display: inline-block;
+  width: 460px;
+  margin-right: 10px;
 }
 
-li button {
+.todo-wrap ul li button {
   border: 0;
   background: none;
   cursor: pointer;
-  float: right;
-  padding-left: 20px;
+  margin: 0px;
   font-size: 1.2rem;
 }
